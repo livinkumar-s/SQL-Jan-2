@@ -1,0 +1,77 @@
+Database 
+---------
+>> It is an organized collection of data. So it can be easily accessed, modified and inserted.
+
+Notebook --> small data 
+Excel --> More data 
+DB --> huge data used by applications.
+
+RDBMS --> Relational Dababase Management System 
+--------------------------------------------------
+>> The data will be stored in form of Tables(Rows and Columns).
+>> SQL is needed
+>>Ex: MySQL, Oracle, PostgreSQL......
+
+DBMS NoSQL
+-----------
+>> The data will be stored in form of Docs(BSON, Objects).
+>> SQL is not needed.
+Ex: MongoDB, MariaDB.....
+
+SQL ---> Structured Query Language 
+
+Syntax 
+-------
+>> It is case-insensitive.(a=A)
+SELECT * FROM TABLE tbname;
+select * from table tbname;
+SeLeCt * FroM TaBlE tbname;
+>> Every query should end with ;
+
+Database(Schema) --> Table1,Table2... ---> Data
+
+Datatypes 
+----------
+Numeric 
+---------
+INT --> integer
+BIGINT ---> large whole numbers
+FLOAT ---> decimal
+DOUBLE --> large decimal 
+
+String
+------
+CHAR(n) --> Fixed length char string. Ex: char(5) --> "Hello", "World", "Hi", "Hi Hello"
+VARCHAR(n) --> Variable length char string. Ex: varchar(5) --> "Hi", "Hello", "Priyanka"
+TEXT --> paragaph
+
+Boolean
+----------
+boolean --> 1 or 0
+
+Date and Time 
+---------------
+DATE ---> "yyyy-mm-dd"
+TIME ---> "HH:MM:SS"
+DATETIME --> both
+
+Constraints 
+------------
+>> It is a set of rule that ensures data integrity
+
+PRIMARY KEY ---> It is used to identify each rows uniquely. Values must be UNIUE and NOT NULL. only one PRIMARY KEY col in a table.
+
+Queries
+--------
+To Create a Database ---> CREATE DATABASE dbname;
+To Select a Database ---> USE dbname;
+To Create a Table ---> CREATE TABLE tbname (
+    col1 datatype constraint,
+    col2 datatype constraint,
+    .
+    .
+    .
+);
+
+
+
