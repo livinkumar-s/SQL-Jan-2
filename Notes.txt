@@ -55,6 +55,17 @@ DATE ---> "yyyy-mm-dd"
 TIME ---> "HH:MM:SS"
 DATETIME --> both
 
+
+Operators 
+----------
+=
+!=, <>
+<
+>
+<=
+>=
+
+
 Constraints 
 ------------
 >> It is a set of rule that ensures data integrity
@@ -73,5 +84,23 @@ To Create a Table ---> CREATE TABLE tbname (
     .
 );
 
+To insert new row --> INSERT INTO tbname (col details--> optional) VALUES (),()....
+To Retrive Data from table --> SELECT col details FROM tbname;
+To Update an existing data in a table --> UPDATE tbname SET col1=val, col2=val...
+To delete a record --> DELETE FROM tbname;
 
+SQL_SAFE_UPDATES --> Can Update only one row. cannot update without WHERE. the condition should depend on primary key.
+
+
+CRUD
+-----
+CREATE ---> INSERT
+READ ---> SELECT
+UPDATE --> UPDATE
+DELETE --> DELETE
+
+WHERE 
+--------
+It is used to Filter the rows.
+Ex: SELECT,UPDATE,DELETE..... WHERE condition;
 
