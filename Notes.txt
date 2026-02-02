@@ -65,6 +65,44 @@ Operators
 <=
 >=
 
+Logical Operators
+--------------------
+AND 
+OR
+NOT --> inverts condition.
+
+BETWEEN 
+--------
+Used to check values within a range (inclusive)
+Ex: WHERE col BETWEEN num1 AND num2;
+
+IN, NOT IN
+----------
+>> Replaces multiple or operator by using a list.
+
+LIKE Operator 
+--------------
+>> Pattern matching 
+Ex: WHERE col LIKE "pattern";
+
+The chars used to create patterns 
+---------------------------------
+% ---> it matches 0 - inf chars 
+_ ---> only one char.
+
+starting with 'r'  ---> 'r%' --> 'ram', 'rakesh', 'rrr', ' r'
+ending with 'r'  ---> '%r' --> 'doctor', 'r'
+3 char ---> '___'
+
+SORTING 
+--------
+Arranging the values under a col.
+Ex: ..... ORDER BY col ASC/DESC;
+
+LIMIT/OFFSET
+--------------
+it is used to limit the number of results.
+Ex:.... LIMIT num OFFSET num;
 
 Constraints 
 ------------
