@@ -110,6 +110,37 @@ Constraints
 
 PRIMARY KEY ---> It is used to identify each rows uniquely. Values must be UNIUE and NOT NULL. only one PRIMARY KEY col in a table.
 
+
+
+Functions
+---------
+A function is a predefined operation that takes input, processes it and result.
+
+Numeric Functions 
+------------------
+ROUND(num) --> Rounds off decimal number to nearest integer.
+FLOOR(dec) --> Rounds off decimal number to integer.
+CEIL(dec) --> Rounds off decimal number next to integer.
+ABS(num) --> Absolute number.
+MOD(num1,num2) ---> reminder
+
+String Functions
+-----------------
+CONCAT(str1,str2....) --> attach all the strings together.
+LENGTH(str) --> Length of the string.
+UPPER(str)
+LOWER(str)
+SUBSTRING("string",start,length) --> extract substring from a string.
+TRIM(str) --> remove the whitespaces.
+REPLACE("str",old,new) --> replaces substring with another
+
+DATE/TIME Functions
+-------------------
+CURDATE()  ---> current date
+CURTIME()
+NOW() --> both time and date
+DATEDIFF(d1,d2) --> difference between these 2 dates in days.
+
 Queries
 --------
 To Create a Database ---> CREATE DATABASE dbname;
@@ -141,4 +172,3 @@ WHERE
 --------
 It is used to Filter the rows.
 Ex: SELECT,UPDATE,DELETE..... WHERE condition;
-

@@ -29,3 +29,9 @@ select * from actorlist where name like '_a%a%' and age<70;
 select * from actorlist order by name asc;
 
 select * from actorlist limit 3 offset 6;
+
+SELECT *
+FROM actorlist
+ORDER BY age DESC
+LIMIT 1 OFFSET 1;
+ 
