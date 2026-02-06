@@ -104,13 +104,29 @@ LIMIT/OFFSET
 it is used to limit the number of results.
 Ex:.... LIMIT num OFFSET num;
 
-Constraints 
-------------
+Constraints and Keys
+------------------------
+Key:
+-----
+It is used to uniquely identify records in a table and establish relationship between tables.
+
+Constraints:
+--------------
 >> It is a set of rule that ensures data integrity
 
-PRIMARY KEY ---> It is used to identify each rows uniquely. Values must be UNIUE and NOT NULL. only one PRIMARY KEY col in a table.
+Keys: 
+------
+PRIMARY KEY ---> It is used to identify each rows uniquely. Values must be UNIUE and NOT NULL. 
 
+FOREIGN KEY ---> It creates relationship between two tables. it refers PK of another table
 
+Constraints:
+----------------
+UNIQUE ---> It allows only unique 
+NOT NULL ---> NO empty cells
+AUTO_INCREMENT --> it increases numeric value by 1
+CHECK (cond)
+DEFAULT --> default value for a column
 
 Functions
 ---------
@@ -172,3 +188,21 @@ WHERE
 --------
 It is used to Filter the rows.
 Ex: SELECT,UPDATE,DELETE..... WHERE condition;
+
+
+cricketer
+id(pk)    name           noOfCenturies    isActive
+--------------------------------------------------
+1	virat kohli	        86	            1
+2	Joe root	        61	            1
+3	Rohit Sharma	    26	            1
+4	sachein tendulkar	100	            0
+
+
+
+jersey
+id(pk)   jerseyNumber    playerId(fk--->pk(cricketer table))
+-------------------------------------
+1         18             1
+2         45             3
+3         7              55(refused)
