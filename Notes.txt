@@ -218,26 +218,54 @@ CROSS join
 >> Matches every row from tb1 with every row of tb2.
 Ex: SELECT * FROM tb1 CROSS JOIN tb2
 
-cricketer
+Aggregation & Grouping
+------------------------
+Aggregation means performing calculations on multiple rows and returning a single value.
+
+Aggregate functions 
+--------------------
+COUNT()
+AVG() ---> average value of a numeric column.
+SUM() ---> sum of values in numeric column
+MIN() --> smallest
+MAX() --> largest
+
+Grouping 
 -----------
-id  name                noc isActive
------------------------------------------
-1	virat kohli	        86	1
-2	Joe root	        61	1
-3	Rohit Sharma	    26	1
-4	sachein tendulkar	100	0
+It ois used to group rows that have the same value.
 
-jersey
-----------
-id        jersey      playerId 
--------------------------------
-1	        18	        1
-2	        45	        3
+WHERE ---> filter the rows 
+HAVING ---> filters the groups
 
+Sub queries
+--------------
+>> It is a query written inside another SQL query.
+> It always enclosed in parantheses.
 
-result
------------
-id  name                noc isActive     id        jersey      playerId 
-------------------------------------------------------------------------
-1	virat kohli	        86	1            1	        18	        1
-1	virat kohli	        86	1            2	        45	        3
+Ex: ......(inner query)
+
+single row subquery
+---------------------
+>> subquery returns only one row.
+Ex: select * from students
+ where mark>(select avg(mark) from students);
+
+multiple row subquery
+---------------------
+It returns multiple values.
+IN,ALL,ANY
+
+ALL
+----
+Ex: select * from students 
+where mark> ALL (select mark from students where dept="ECE");
+
+ANY
+----
+Ex: select * from students 
+where mark> ANY (select mark from students where dept="ECE");
+
+Correlated Subquery 
+--------------------
+>> Depends on outer query value.
+Runs once for every row.
