@@ -176,7 +176,20 @@ To delete a record --> DELETE FROM tbname;
 
 SQL_SAFE_UPDATES --> Can Update only one row. cannot update without WHERE. the condition should depend on primary key.
 
+ALTER 
+-----
+>> It is used to modify the structure of an existing table.
 
+To Add a new column ---> ALTER TABLE tbname ADD col1 detail ADD col2 detail;
+To add a column in specific position ---> ALTER TABLE tbname ADD col1 detail (after/before) col;
+To modify a col ---> ALTER TABLE tbname MODIFY col ....;
+To rename a column ---> ALTER TABLE tbname RENAME COLUMN old TO new;
+To Drop a column ---> ALTER TABLE tbname DROP COLUMN col;
+
+To rename table ---> ALTER TABLE tbname RENAME TO new;
+
+To DROP table --> DROP TABLE tbname;
+To DROP db --> DROP DATABASE dbname;
 CRUD
 -----
 CREATE ---> INSERT
@@ -269,3 +282,11 @@ Correlated Subquery
 --------------------
 >> Depends on outer query value.
 Runs once for every row.
+
+Views
+-------
+>> A view is a virtual table based on the result of an SQL query.
+> Does not store physical data 
+> It stores only query definition 
+
+Ex: CREATE VIEW viewName AS SELECT.....;
